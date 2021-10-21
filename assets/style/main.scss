@@ -1,0 +1,500 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif !important;
+  }
+
+  $font-weight: (
+    "regular": 400,
+    "medium": 500,
+    "semi-bold": 600,
+    "bold": 700,
+    "extra-bold": 800,
+  );
+
+body {
+    ::placeholder { 
+        color: #989DB1 !important;
+     }     
+
+    .font-red-hat-display {
+        font-family: 'Red Hat Display', sans-serif !important;
+    }
+
+    .cl-light-blue {
+        color: #34b3ff;
+    }
+    
+    nav {
+        .navbar-brand {
+            font-family: 'Red Hat Display', sans-serif !important;
+            font-size: 26px;            
+            font-weight: map-get($map: $font-weight, $key: bold) !important;
+        }
+
+        .navigation {
+            @media screen and (min-width: 768px) {
+                margin-left: 80px;
+            }
+            li {
+                margin-right: 32px;
+            }
+            a {
+                font-size: 16px;
+                font-weight: map-get($map: $font-weight, $key: regular) !important;
+                color: #16171C !important;
+            }
+        }
+
+        .authentication {
+            li {
+                margin-right: 38px;
+            }
+            a {
+                font-size: 16px;
+                font-weight: map-get($map: $font-weight, $key: bold) !important;
+            }            
+            .cl-white {
+                @media screen and (min-width: 768px) {
+                    color: #FFFFFF !important;
+                }
+            }
+            .login {
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
+                a {   
+                    @media screen and (max-width: 768px) {
+                        background: #518CFF;
+                        border-radius: 8px;
+                        align-items: center;
+                        color: #FFFFFF !important;
+                        padding: 14px 14px 14px 14px !important;
+                    }
+                }
+            }
+            .signup {
+                background: #FFFFFF;
+                border-radius: 8px;
+                align-items: center;
+                color: #518CFF !important;
+                padding: 14px 14px 14px 14px !important;
+            }
+        }
+    }
+
+    .abovefold {
+        background: linear-gradient(180deg, #F9FAFE 0%, #FFFFFF 100%);
+
+        .header {
+            margin-top: 85px;
+            margin-bottom: 115px;
+        }
+
+        .img-header {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .headline {
+            font-family: 'Red Hat Display', sans-serif !important;
+            font-weight: map-get($map: $font-weight, $key: bold) !important;
+            line-height: 91px;
+            color: #16171C;
+            @media screen and (max-width: 768px) {
+                font-size: 54px;
+                line-height: 80px !important;
+            }
+            font-size: 72px;
+        }
+
+        .sub-headline {
+            font-family: 'Red Hat Display', sans-serif !important;
+            font-weight: map-get($map: $font-weight, $key: regular) !important;
+            font-size: 26px;
+            line-height: 38px;
+            color: #494C57;
+            margin-top: 30px;
+            width: 75%;
+            @media screen and (min-width: 768px) {
+                width: 373px;
+            }
+        }
+
+        .four-point {
+            margin-top: 80px;
+        }
+
+        .card {
+            @media screen and (min-width: 768px) {
+                width: 464px;
+            }
+            background: #FFFFFF;
+            box-shadow: -32px 48px 60px rgba(22, 23, 28, 0.04);
+            border-radius: 12px;
+            padding: 52px 52px 40px;
+            border: none;
+
+            .form-control {
+                background: #F8F8FC;
+                border-radius: 8px;
+                border: none;
+                padding: 16px 20px;
+                height: 56px;
+                font-weight: map-get($map: $font-weight, $key: semi-bold) !important;
+            }
+
+            .input-title {
+                color: #494C57;
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+
+            .btn-card {
+                margin-top: 36px;
+                background: #00B67A;
+                border-radius: 8px;
+                height: 56px;
+                padding: 10px;
+                color: #FFFFFF;
+                font-size: 16px;
+                font-weight: map-get($map: $font-weight, $key: bold) !important;
+            }
+
+            .award {
+                font-size: 12px;
+                line-height: 18px;
+                color: #8D8F98;
+            }
+        }
+    }
+
+    .testimoni {
+        background: radial-gradient(100% 100% at 50% 0%, #F9FAFE 0%, #FAFAFD 100%);
+        padding-top: 90px;
+        padding-bottom: 90px;
+
+        .brand {
+            img {
+                width: 200px !important;
+            }
+        }
+    }
+
+    .adventages {
+        z-index: 30 !important;
+        background: #FFFFFF;
+        padding-top: 90px;
+        padding-bottom: 90px;
+        .headline {
+            font-family: 'Red Hat Display', sans-serif !important;
+            font-weight: map-get($map: $font-weight, $key: bold) !important;
+            font-size: 60px;
+            line-height: 140%;
+            color: #16171C;
+            @media screen and (max-width: 768px) {
+                font-size: 44px;
+                line-height: 60px !important;
+            }
+        }
+
+        .card {
+            background: transparent;
+            width: 286px;
+            border: none;
+            margin-top: 125px;
+            @media screen and (max-width: 768px) {
+                margin-top: 80px;
+            }
+        }
+
+        .card-desc {
+            margin-top: 32px;
+        }
+
+        .card-title {
+            font-weight: map-get($map: $font-weight, $key: bold);
+            font-size: 20px;
+            line-height: 24px;
+            color: #16171C;
+        }
+
+        .card-text {
+            font-weight: map-get($map: $font-weight, $key: regular);
+            font-size: 16px;
+            line-height: 160%;
+            color: #494C57;
+        }
+    }
+
+    .ornament {
+        .ornament-right {
+            z-index: 0 !important;            
+            position: absolute;
+        }
+    }
+
+    .plans {
+        background: #FAFAFD;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        .headline {
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: map-get($map: $font-weight, $key: bold);
+            font-size: 60px;
+            line-height: 140%;
+            text-align: center;
+            color: #16171C;
+            @media screen and (max-width: 768px) {
+                font-size: 40px;
+                line-height: 60px !important;
+            }
+        }
+
+        .explain {
+            font-weight: map-get($map: $font-weight, $key: regular);
+            font-size: 16px;
+            line-height: 160%;
+            text-align: center;
+            color: #494C57;
+            margin-top: 32px;
+        }
+
+        .offer {
+            margin-top: 90px;
+            .free {
+                padding: 40px 32px;
+                width: 297px;
+                // margin-right: 56px;
+                background: #FFFFFF;
+                border-radius: 12px;
+                height: 500px;
+                
+                .text-free {
+                    font-family: Inter;
+                    font-weight: map-get($map: $font-weight, $key: regular);
+                    font-size: 20px;
+                    line-height: 160%;
+                    color: #16171C;
+                }
+    
+                .price {
+                    margin-top: 20px;
+                    font-weight: map-get($map: $font-weight, $key: semi-bold);
+                    font-size: 32px;
+                    line-height: 160%;
+                    color: #16171C;
+    
+                    .normal-text {
+                        font-weight: map-get($map: $font-weight, $key: regular);
+                        font-size: 16px;
+                    }
+                }
+    
+                .benefits {
+                    margin-top: 8px;
+                    font-weight: map-get($map: $font-weight, $key: regular);
+                    font-size: 14px;
+                    line-height: 160%;
+                    text-align: center;
+                    color: #8D8F98;
+                }
+    
+                .features {
+                    margin-top: 40px;
+                    .detail {                    
+                        font-weight: map-get($map: $font-weight, $key: regular);
+                        font-size: 16px;
+                        line-height: 160%;
+                        color: #494C57;
+                        margin-top: 20px;
+                    }
+                }
+    
+                .btn-free {
+                    margin-top: 72px;
+                    padding: 8px;
+                    background: #FAFAFD;
+                    border-radius: 60px;
+                    font-weight: map-get($map: $font-weight, $key: bold);
+                    font-size: 16px;
+                    line-height: 160%;
+                    color: #494C57;
+                    width: 100%;
+                }
+            }
+
+            .professional {
+                padding: 40px 32px;
+                background: linear-gradient(180deg, #518CFF 0%, #4376DB 100%);
+                border-radius: 12px;
+                width: 297px;
+
+                .title {
+                    padding: 4px 12px;
+                    width: 102px;
+                    background: #F2FF57;
+                    border-radius: 4px;
+                    font-weight: map-get($map: $font-weight, $key: bold);
+                    font-size: 12px;
+                    color: #494C57;
+                    margin-top: -52px !important;
+                }
+
+                .text-pro {
+                    margin-top: 27px;
+                    font-weight: map-get($map: $font-weight, $key: regular);
+                    font-size: 20px;
+                    line-height: 160%;
+                    color: #FFFFFF;
+                }
+    
+                .price {
+                    margin-top: 20px;
+                    font-weight: map-get($map: $font-weight, $key: semi-bold);
+                    font-size: 32px;
+                    line-height: 160%;
+                    color: #FFFFFF;
+    
+                    .normal-text {
+                        font-weight: map-get($map: $font-weight, $key: regular);
+                        font-size: 16px;
+                    }
+                }
+    
+                .benefits {
+                    margin-top: 8px;
+                    font-weight: map-get($map: $font-weight, $key: regular);
+                    font-size: 14px;
+                    line-height: 160%;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+    
+                .features {
+                    margin-top: 40px;
+                    .detail {                    
+                        font-weight: map-get($map: $font-weight, $key: regular);
+                        font-size: 16px;
+                        line-height: 160%;
+                        color: #FFFFFF;
+                        margin-top: 20px;
+                    }
+                }
+    
+                .btn-free {
+                    margin-top: 72px;
+                    padding: 8px;
+                    color: #FFFFFF;
+                    border-radius: 60px;
+                    font-weight: map-get($map: $font-weight, $key: bold);
+                    font-size: 16px;
+                    line-height: 160%;
+                    background: #00B67A;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .contact-us {
+        background: #FFFFFF;
+        padding-top: 125px;
+        padding-bottom: 90px;
+
+        .headline {
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: map-get($map: $font-weight, $key: bold);
+            font-size: 60px;
+            line-height: 140%;
+            text-align: center;
+            color: #16171C;
+            @media screen and (max-width: 768px) {
+                font-size: 40px;
+                line-height: 60px !important;
+            }
+        }
+
+        .button {
+            margin-top: 72px;
+        }
+
+        .btn-contact {
+            padding: 16px 32px;
+            background: #00B67A;
+            border-radius: 12px;
+            font-weight: map-get($map: $font-weight, $key: bold);
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+
+        .btn-demo {
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: map-get($map: $font-weight, $key: regular);
+            font-size: 20px;
+            line-height: 24px;
+            color: #16171C;
+            border: 1px solid #8D8F98;
+            box-sizing: border-box;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+
+    footer {
+        background: #313E60;
+        padding-top: 50px;
+        padding-bottom: 70px;
+        .logo {
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: map-get($map: $font-weight, $key: bold);
+            font-size: 26px;
+            line-height: 38px;
+            color: #FAFAFD;
+        }
+
+        .social-media {
+            margin-top: 55px;
+        }
+
+        .copyright {
+            font-family: 'Red Hat Display', sans-serif !important;
+            font-weight: map-get($map: $font-weight, $key: regular);
+            font-size: 16px;
+            line-height: 135%;
+            color: #FAFAFD;
+            margin-top: 20px;
+        }
+
+        .nav-footer {
+            p {
+                font-weight: map-get($map: $font-weight, $key: bold) !important;
+                font-family: 'Red Hat Display', sans-serif !important;
+                font-size: 20px;
+                line-height: 135%;
+                color: #FAFAFD;
+            }
+            a {
+                font-weight: map-get($map: $font-weight, $key: regular) !important;
+                font-family: 'Red Hat Display', sans-serif !important;
+                font-size: 20px;
+                line-height: 135%;
+                color: #FAFAFD;
+            }
+        } 
+
+        li {
+            margin-bottom: 16px;
+        }
+    }
+}
